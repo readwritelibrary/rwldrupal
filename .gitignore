@@ -1,0 +1,18 @@
+# Mac OS resource forks
+.DS_Store
+
+# Windows Explorer files
+Thumbs.db
+desktop.ini
+
+# Temp folders
+temp/*
+
+# Other source repository archive directories (protects when importing)
+.hg
+.svn
+CVS
+
+# Automatic backup files
+*.swp
+*~
