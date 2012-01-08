@@ -1,6 +1,51 @@
-# Ignore configuration files that may contain sensitive information.
-sites/*/settings*.php
+# Mac OS resource forks
+.DS_Store
 
-# Ignore paths that contain user-generated content.
-sites/*/files
-sites/*/private
+# Windows Explorer files
+Thumbs.db
+desktop.ini
+
+# Temp folders
+temp/*
+
+# Other source repository archive directories (protects when importing)
+.hg
+.svn
+CVS
+
+# Automatic backup files
+*.swp
+*~
+
+# Drupal-specific
+sites/default/files
+sites/default/private
+sites/default/settings.php
+cache/
+files/
+/README.txt
+/CHANGELOG.txt
+/COPYRIGHT.txt
+/INSTALL*.txt
+/LICENSE.txt
+/MAINTAINERS.txt
+/UPGRADE.txt
+robots.txt
+sites/all/README.txt
+sites/all/modules/README.txt
+sites/all/themes/README.txt
+.htaccess
+
+## for non core developer
+## only include "sites" folder without exclusions before
+cron.php
+index.php
+install.php
+update.php
+xmlrpc.php
+/includes
+/misc
+/modules     
+/profiles
+/scripts
+/themes
