@@ -1,0 +1,75 @@
+/* Blocks. */
+.block {
+  margin-bottom: 20px;
+}
+h2.block-title {
+  font-size: 1.385em;
+  line-height: 1.2;
+  margin: 0 0 0.4em 0;
+}
+.mini-panel-title {
+  margin: 0 10px;
+}
+.region-header .block {
+  clear: none;
+  float: right;
+  margin: 0;
+}
+#page > footer .block {
+  margin: 0;
+}
+#page > footer .block .block-inner {
+  padding: 20px 0;
+}
+/* Block lists */
+.block ul li {
+  margin: 0 0 0 0.5em;
+}
+.block .item-list ul  {
+  margin-left: 1em;
+}
+.block-panels_mini .mini-panel-title {
+  margin: 0 10px;
+}
+/* Reset margins and padding for the Help block .block-inner */
+#block-system-help .block-inner {
+  padding: 0;
+  margin: 0;
+}
+/* Reset block ul in the dashboard */
+#dashboard .block ul {
+  margin-left: 0;
+}
+.block-search .inner {
+  padding-left: 0;
+  padding-right: 0;
+}
+.region-header .block-search .inner {
+  padding: 0;
+}
+.block-search input.form-text {
+  padding-right: 24px;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.block-search input.form-submit {
+  background: transparent url(images/black.png) no-repeat 0 -330px;
+  border: none;
+  height: 16px;
+  margin: -1.85em 18px 0 0;
+  position: absolute;
+  right: 0;
+  text-indent: -999em;
+  width: 20px;
+  z-index: 1;
+  text-transform: uppercase; /* IE7 hack to trigger text indent reliably */
+}
+.block-search .form-submit:hover,
+.block-search .form-submit:focus,
+.block-search .form-submit:active {
+  background: #fff url(../images/gray.png) no-repeat 0 -330px;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,42 @@
+<?php
+// $Id: rate_expiration.install,v 1.2.2.1 2011/01/12 23:05:21 mauritsl Exp $
+
+/**
+ * @file
+ * Installation/Uninstallation functions for rate expiration module.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function rate_expiration_schema() {
+  $schema = array();
+
+  $schema['rate_expiration'] = array(
+    'fields' => array(
+      'nid' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'widget_name' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ),
+      'start' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'end' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+    ),
+    'primary key' => array('nid', 'widget_name'),
+  );
+
+  return $schema;
+}
